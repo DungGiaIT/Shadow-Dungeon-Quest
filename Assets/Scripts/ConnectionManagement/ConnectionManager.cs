@@ -55,6 +55,23 @@ namespace Unity.BossRoom.ConnectionManagement
     /// </summary>
     public class ConnectionManager : MonoBehaviour
     {
+        public static ConnectStatus ParseDisconnectReason(string reason, ConnectStatus fallback)
+        {
+            if (string.IsNullOrWhiteSpace(reason) || reason.TrimStart()[0] != '{')
+            {
+                return fallback;
+            }
+
+            try
+            {
+                return JsonUtility.FromJson<ConnectStatus>(reason);
+            }
+            catch (ArgumentException)
+            {
+                return fallback;
+            }
+        }
+
         ConnectionState m_CurrentState;
 
         [Inject]

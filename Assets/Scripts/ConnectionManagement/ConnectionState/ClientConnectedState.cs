@@ -34,7 +34,7 @@ namespace Unity.BossRoom.ConnectionManagement
             }
             else
             {
-                var connectStatus = JsonUtility.FromJson<ConnectStatus>(disconnectReason);
+                var connectStatus = ConnectionManager.ParseDisconnectReason(disconnectReason, ConnectStatus.GenericDisconnect);
                 m_ConnectStatusPublisher.Publish(connectStatus);
                 m_ConnectionManager.ChangeState(m_ConnectionManager.m_Offline);
             }

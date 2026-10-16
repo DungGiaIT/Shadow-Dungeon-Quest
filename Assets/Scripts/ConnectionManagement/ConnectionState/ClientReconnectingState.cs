@@ -56,14 +56,14 @@ namespace Unity.BossRoom.ConnectionManagement
                 }
                 else
                 {
-                    var connectStatus = JsonUtility.FromJson<ConnectStatus>(disconnectReason);
-                    m_ConnectStatusPublisher.Publish(connectStatus);
+                    var connectStatus = ConnectionManager.ParseDisconnectReason(disconnectReason, ConnectStatus.GenericDisconnect);
                     switch (connectStatus)
                     {
                         case ConnectStatus.UserRequestedDisconnect:
                         case ConnectStatus.HostEndedSession:
                         case ConnectStatus.ServerFull:
                         case ConnectStatus.IncompatibleBuildType:
+                            m_ConnectStatusPublisher.Publish(connectStatus);
                             m_ConnectionManager.ChangeState(m_ConnectionManager.m_Offline);
                             break;
                         default:
@@ -80,7 +80,7 @@ namespace Unity.BossRoom.ConnectionManagement
                 }
                 else
                 {
-                    var connectStatus = JsonUtility.FromJson<ConnectStatus>(disconnectReason);
+                    var connectStatus = ConnectionManager.ParseDisconnectReason(disconnectReason, ConnectStatus.GenericDisconnect);
                     m_ConnectStatusPublisher.Publish(connectStatus);
                 }
 

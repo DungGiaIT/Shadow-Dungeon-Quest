@@ -125,8 +125,6 @@ namespace Unity.BossRoom.Tests.Runtime
 
             InitializeInstance("Server", m_ServerNetworkManager, out m_ServerConnectionManager, out m_ServerScope);
 
-            CreatePlayerPrefab();
-
             base.OnServerAndClientsCreated();
         }
 

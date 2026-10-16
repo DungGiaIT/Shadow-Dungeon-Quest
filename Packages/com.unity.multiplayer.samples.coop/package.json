@@ -7,7 +7,7 @@
   "unity": "6000.0",
   "description": "Utilities package built on top of Netcode for GameObjects, providing useful scripts and tools.",
   "dependencies": {
-    "com.unity.multiplayer.tools": "2.2.3",
-    "com.unity.netcode.gameobjects": "2.2.0"
+    "com.unity.multiplayer.tools": "2.2.12",
+    "com.unity.netcode.gameobjects": "2.13.3"
   }
 }
