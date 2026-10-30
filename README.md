@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/shadow-dungeon-logo.svg" alt="Shadow Dungeon logo" width="300">
+  <img src="Documentation/Images/Boss.png" alt="Shadow Dungeon logo" width="300">
 </p>
 
 <h1 align="center">Shadow Dungeon</h1>
