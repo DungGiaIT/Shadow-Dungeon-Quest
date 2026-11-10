@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Unity-6000.0.52f1-222222?logo=unity" alt="Unity 6000.0.52f1">
+  <img src="https://img.shields.io/badge/Unity-6000.5.8f1-222222?logo=unity" alt="Unity 6000.5.8f1">
   <img src="https://img.shields.io/badge/Render%20Pipeline-URP-7b68ee" alt="URP">
   <img src="https://img.shields.io/badge/Status-In%20development-f0ad4e" alt="In development">
 </p>
@@ -47,7 +47,7 @@ Repo hiện đang ở giai đoạn khởi tạo: có cấu hình Unity URP, scen
 
 ### Yêu cầu
 
-- Unity **6000.0.52f1**.
+- Unity **6000.5.8f1**.
 - Git.
 - Kết nối mạng lần đầu để Unity khôi phục các package trong `Packages/manifest.json`.
 
@@ -60,7 +60,7 @@ Repo hiện đang ở giai đoạn khởi tạo: có cấu hình Unity URP, scen
    cd Shadow-Dungeon
    ```
 
-2. Thêm project trong Unity Hub và chọn Unity `6000.0.52f1`.
+2. Thêm project trong Unity Hub và chọn Unity `6000.5.8f1`.
 3. Mở scene `Assets/Scenes/SampleScene.unity`.
 4. Chờ Unity hoàn tất import package và asset.
 
